@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Popins-Bold";
+    src: url("../Fonts/poppins/Poppins-Bold.otf");
+}
+
+@font-face {
+    font-family: "Popins-Thin";
+    src: url("../Fonts/poppins/Poppins-Thin.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.navbar .icon span {
+    width: 35px;
+    height: 4px;
+    display: block;
+    background: #000;
+    margin: 5px 0;
+}
+
+.navbar .icon span:nth-child(1) {
+    width: 25px;
+    margin-left: auto;
+}
+
+.home,
+.home2,
+.home3,
+.home4 {
+    height: 100vh;
+    text-align: center;
+}
+
+.home h2,
+.home2 h2,
+.home3 h2,
+.home4 h2 {
+    font-family: 'Popins-Bold', serif;
+    width: 80%;
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+}
+
+.home h1,
+.home2 h1,
+.home3 h1,
+.home4 h1 {
+    font-family: 'Popins-Thin', serif;
+    width: 80%;
+    font-size: 1.3rem;
+}
+
+.home img,
+.home2 img,
+.home3 img,
+.home4 img {
+    width: 80%;
+    max-width: 700px;
+}
+
+.home2 h1,
+.home2 h2 {
+    color: #a376ff;
+}
+
+.home3 h1,
+.home3 h2 {
+    color: #00d7ff;
+}
+
+.home4 h1,
+.home4 h2 {
+    color: #0092ff;
+}
