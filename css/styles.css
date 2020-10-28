@@ -29,17 +29,13 @@
     margin: 5px 0;
 }
 
-.navbar .icon span:nth-child(1) {
-    width: 25px;
-    margin-left: auto;
-}
-
 .home,
 .home2,
 .home3,
 .home4 {
     height: 100vh;
     text-align: center;
+    max-height: 700px;
 }
 
 .home h2,
@@ -65,8 +61,8 @@
 .home2 img,
 .home3 img,
 .home4 img {
-    width: 80%;
-    max-width: 700px;
+    width: 90%;
+    max-width: 800px;
 }
 
 .home2 h1,
