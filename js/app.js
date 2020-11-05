@@ -128,9 +128,11 @@ $(window).scroll(function () {
     let header = $(".navbar");
     if ($(".navbar").offset().top > 500) {
         $(header).css("background", "#fff");
+        $('.navbar img').fadeIn();
     } else {
         // $(".navbar").addClass("navbar-expand-lg");
         $(header).css("background", "transparent");
+        $('.navbar img').fadeOut()
     }
 });
 

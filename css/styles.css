@@ -64,6 +64,11 @@ a:hover {
     padding: 0 30px;
 }
 
+.navbar .logo {
+    width: 100px;
+    display: none;
+}
+
 .icon {
     width: 35px;
     height: 15px;
@@ -405,7 +410,7 @@ form button {
 .newsletter {
     border: 1px solid #ebebeb;
     border-radius: 35px;
-    box-shadow: 5px 5px 8px #ebebeb;
+    box-shadow: 0px 0px 15px #ebebeb;
 }
 
 .form-control {
