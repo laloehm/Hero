@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
@@ -20,7 +21,13 @@
 <body>
     <section class="home d-flex justify-content-center align-items-center flex-column px-lg-5">
         <div class="navbar fixed-top">
-            <div class="icon">
+            <div class="links" id="menu">
+                <a href="#nosotros">Nosotros</a>
+                <a href="#fundaciones">Fundaciones</a>
+                <a href="#heroes">Heróes</a>
+                <a href="#contacto">contacto</a>
+            </div>
+            <div class="icon" id="icon-menu">
                 <span></span>
                 <span></span>
             </div>
@@ -31,55 +38,70 @@
         <h1>Conectar para ayudar</h1>
     </section>
 
-    <section class="about">
+    <section class="about my-5" id="nosotros">
         <div class="container">
-            <h2>NOSOTROS</h2>
-            <div class="row my-5">
-                <div class="col-md-4">
-                    <h3>VISIÓN</h3>
-                    <p>Ser el motor de cambio que invite a los individuos y a las empresas a ser socialmente responsables convirtiéndonos en un vínculo confiable entre las fundaciones y la sociedad.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>MISIÓN</h3>
-                    <p>Ser la primera empresa mexicana que, al donar el 50% de sus utilidades netas, construya un puente entre la sociedad y las fundaciones, para lograr un verdadero cambio en el país.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>VALORES</h3>
-                    <p>Trascendencia. Todo lo que hacemos en esta vida tiene un fin supremo para transformar la vida de alguien más. </p>
-                    <p>Acción y superación. Construir alianzas basadas en acciones que enaltecen a las personas mediante sus decisiones de ser mejores seres humanos.</p>
-                    <p>Escuchar. Las necesidades de México deben ser escuchadas, queremos darle una voz a las causas sociales.</p>
-                    <p>Innovación. Hero se constituye de acciones que enciendan la creatividad y movilidad de las nuevas tendencias del mundo.</p>
+            <h2 class="title">NOSOTROS</h2>
+            <div class="my-5 pb-5">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="content">
+                                <h3>VISIÓN</h3>
+                                <p>Ser el motor de cambio que invite a los individuos y a las empresas a ser socialmente responsables convirtiéndonos en un vínculo confiable entre las fundaciones y la sociedad.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="content">
+                                <h3>MISIÓN</h3>
+                                <p>Ser la primera empresa mexicana que, al donar el 50% de sus utilidades netas, construya un puente entre la sociedad y las fundaciones, para lograr un verdadero cambio en el país.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="content">
+                                <h3>VALORES</h3>
+                                <p>Trascendencia. Todo lo que hacemos en esta vida tiene un fin supremo para transformar la vida de alguien más. </p>
+                                <p>Acción y superación. Construir alianzas basadas en acciones que enaltecen a las personas mediante sus decisiones de ser mejores seres humanos.</p>
+                                <p>Escuchar. Las necesidades de México deben ser escuchadas, queremos darle una voz a las causas sociales.</p>
+                                <p>Innovación. Hero se constituye de acciones que enciendan la creatividad y movilidad de las nuevas tendencias del mundo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
                 </div>
             </div>
         </div>
     </section>
 
-    <Section class="fundaciones">
+    <Section class="fundaciones my-5 py-5" id="fundaciones">
         <div class="container">
-            <h2>FUNDACIONES</h2>
+            <h2 class="title">FUNDACIONES</h2>
             <div class="categorias my-5">
-                <div class="categoria">
+                <div class="categoria mujeres" data-toggle="modal" data-target="#modalMujeres">
                     <h2>MUJERES</h2>
                 </div>
-                <div class="categoria">
+                <div class="categoria niños" data-toggle="modal" data-target="#modalDos">
                     <h2>NIÑOS</h2>
                 </div>
-                <div class="categoria">
+                <div class="categoria" data-toggle="modal" data-target="#exampleModalCenter">
                     <h2>EDUCACIÓN</h2>
                 </div>
-                <div class="categoria">
+                <div class="categoria" data-toggle="modal" data-target="#exampleModalCenter">
                     <h2>RECONSTRUCCIÓN</h2>
                 </div>
-                <div class="categoria">
+                <div class="categoria" data-toggle="modal" data-target="#exampleModalCenter">
                     <h2>ANIMALES</h2>
                 </div>
-                <div class="categoria">
+                <div class="categoria" data-toggle="modal" data-target="#exampleModalCenter">
                     <h2>ECOLOGÍA</h2>
                 </div>
-                <div class="categoria">
+                <div class="categoria" data-toggle="modal" data-target="#exampleModalCenter">
                     <h2>SALUD</h2>
                 </div>
-                <div class="categoria">
+                <div class="categoria" data-toggle="modal" data-target="#exampleModalCenter">
                     <h2>CANCER</h2>
                 </div>
             </div>
@@ -87,11 +109,11 @@
         </div>
     </Section>
 
-    <section class="heroes">
+    <section class="heroes my-5 py-5" id="heroes">
         <div class="container">
-            <h2>NUESTROS HEROES</h2>
+            <h2 class="title">NUESTROS HERÓES</h2>
             <div class="px-5 my-5">
-                <div class="owl-carousel owl-theme">
+                <!-- <div class="owl-carousel owl-theme">
                     <div class="item">
                         <img src="images/Marian-300x300.jpg" alt="">
                     </div>
@@ -128,33 +150,87 @@
                     <div class="item">
                         <h4>12</h4>
                     </div>
-                </div>
+                </div> -->
             </div>
 
+            <div class="px-md-5 box-carousel">
+                <ul class="carousel d-flex align-items-center flex-column">
+                    <li class="items main-pos" data-toggle="modal" data-target="#modalSemillas" id="1">
+                        <img src="images/Heroes/Lorena_Ochoa.jpg" class="img-fluid" alt="">
+                        <h3 class="">Lorena Ochoa</h3>
+                    </li>
+                    <li class="items right-pos" data-toggle="modal" data-target="#modalEspecias" id="2">
+                        <img src="images/Heroes/Adela_Micha.jpg" class="img-fluid" alt="">
+                        <h3>Adela Micha</h3>
+                    </li>
+                    <li class="items back-pos" data-toggle="modal" data-target="#modalEspecias" id="3">
+                        <img src="images/Heroes/Adrian_Uribe.jpg" class="img-fluid" alt="">
+                        <h3>Adrian Uribe</h3>
+                    </li>
+                    <li class="items back-pos" data-toggle="modal" data-target="#modalAves" id="4">
+                        <img src="images/Heroes/Aislinn_Derbez.jpg" class="img-fluid" alt="">
+                        <h3>Aislinn Derbez</h3>
+                    </li>
+                    <li class="items back-pos" data-toggle="modal" data-target="#modalVarios" id="5">
+                        <img src="images/Heroes/Alejandro_Fernandez.jpg" class=" img-fluid" alt="">
+                        <h3>Alejandro Fernandez</h3>
+                    </li>
+                    <li class="items back-pos" data-toggle="modal" data-target="#modalEmpacados" id="6">
+                        <img src="images/Heroes/Checo_Perez.jpg" class="img-fluid" alt="">
+                        <h3>Checo Pérez</h3>
+                    </li>
+                    <li class="items back-pos" data-toggle="modal" data-target="#modalCereales" id="7">
+                        <img src="images/Heroes/Diego_Schoening.jpg" class="img-fluid" alt="">
+                        <h3>Diego Schoening</h3>
+                    </li>
+                    <li class="items back-pos" data-toggle="modal" data-target="#modalChiles" id="8">
+                        <img src="images/Heroes/Fernanda_Familiar.jpg" class="img-fluid" alt="">
+                        <h3>Fernanda Familiar</h3>
+                    </li>
+                    <li class="items back-pos" data-toggle="modal" data-target="#modalCondimentos" id="9">
+                        <img src="images/Heroes/Marisol_Gonzalez.jpg" class="img-fluid" alt="">
+                        <h3>Marisol González</h3>
+                    </li>
+                    <li class="items back-pos" data-toggle="modal" data-target="#modalCondimentos" id="10">
+                        <img src="images/Heroes/Omar_Chaparro.jpg" class="img-fluid" alt="">
+                        <h3>Omar Chaparro</h3>
+                    </li>
+                    <li class="items back-pos" data-toggle="modal" data-target="#modalCondimentos" id="11">
+                        <img src="images/Heroes/Rafa_Marquez.jpg" class="img-fluid" alt="">
+                        <h3>Rafa Marquez</h3>
+                    </li>
+                    <li class="items left-pos" data-toggle="modal" data-target="#modalOleaginosas" id="12">
+                        <img src="images/Heroes/Memo_Ochoa.jpg" class=" img-fluid" alt="">
+                        <h3>Memo Ochoa</h3>
+                    </li>
+                </ul>
+                <div class="d-none d-md-block" id="prev"><img src="images/Prev.svg" alt=""></div>
+                <div class="d-none d-md-block" id="next"><img src="images/Next.svg" alt=""></div>
+            </div>
         </div>
     </section>
 
-    <section class="contact my-5">
+    <section class="contact my-5 py-5" id="contacto">
         <div class="container">
-            <h2>CONTACTANOS</h2>
-            <div class="row">
+            <div class="row my-5">
                 <div class="col-md-6 pr-5">
-                    <for class="">
+                    <h2 class="title mb-5">CONTACTO</h2>
+                    <form class="">
                         <div class="form-group">
                             <label for="exampleInputPassword1">Nombre completo</label>
                             <input type="text" class="form-control" id="name" name="name">
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 pl-0">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 pr-0">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Teléfono</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                                 </div>
                             </div>
                         </div>
@@ -167,27 +243,27 @@
                             <label class="form-check-label" for="exampleCheck1">Acepto terminos y condiciones</label>
                         </div>
                         <button type="submit" class="btn btn-primary">Enviar</button>
-                        </form>
+                    </form>
                 </div>
-                <div class="col-md-6 pl-5">
-                    <h2>NEWSLATER</h2>
+                <div class="col-md-6 p-5 newsletter">
+                    <h2 class="title mb-5">NEWSLETTER</h2>
                     <form class="w-100">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Acepto terminos y condiciones</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Suscribirse</button>
+                        <button type="submit" class="btn btn-primary mt-4">Suscribirse</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <footer class="py-5">
         <div class="container">
             <div class="row my-4 justify-content-around">
                 <a href="">Nosotros</a>
@@ -196,10 +272,68 @@
                 <a href="">Aviso de privacidad</a>
                 <a href="">Términos y condiciones</a>
             </div>
+            <div class="row">
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <img src="images/logo_blanco.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-8 d-flex align-items-center justify-content-center">
+                    <p class="text-center m-0">© 2020 Todos los derechos reservados, Hero México</p>
+                </div>
+            </div>
         </div>
-
-        <p class="text-center">© 2020 Todos los derechos reservados, Hero México</p>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalMujeres" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">MUJERES</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h4>Asociación Mexicana de Fibrosis Quística Ac</h4>
+                            <p>Nacen en México 350 niñas y niños con FQ al año, sin embargo, el 85% muere en etapas tempranas de la infancia por complicaciones respiratorias y desnutrición. Ante la necesidad de contar con diagnósticos oportunos, tratamientos adecuados y de brindar una mejor calidad de vida a los pacientes y sus familias, en 1982 se constituyó la Asociación Mexicana de Fibrosis
+                                Quística, A.C. (AMFQ) como una asociación civil sin fines de lucro.</p>
+                        </div>
+                        <div class="col-md-5 d-flex justify-content-center align-items-center">
+                            <img src="images/Categorias/Fibrosis.svg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalDos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">MUJERES</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h4>Asociación Mexicana de Fibrosis Quística Ac</h4>
+                            <p>Nacen en México 350 niñas y niños con FQ al año, sin embargo, el 85% muere en etapas tempranas de la infancia por complicaciones respiratorias y desnutrición. Ante la necesidad de contar con diagnósticos oportunos, tratamientos adecuados y de brindar una mejor calidad de vida a los pacientes y sus familias, en 1982 se constituyó la Asociación Mexicana de Fibrosis
+                                Quística, A.C. (AMFQ) como una asociación civil sin fines de lucro.</p>
+                        </div>
+                        <div class="col-md-5 d-flex justify-content-center align-items-center">
+                            <img src="images/Categorias/Unidos-Black.svg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Optional JavaScript -->
@@ -207,7 +341,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js'></script>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js'></script> -->
     <script src="js/app.js"></script>
 
 </body>

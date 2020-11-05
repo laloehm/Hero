@@ -1,0 +1,119 @@
+.box-carousel,
+.modal-body .box-carousel {
+    width: 500px;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.box-carousel li {
+    width: 360px;
+    display: inline-block;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    /* border: 5px solid #006e00;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px; */
+}
+
+.box-carousel li p {
+    color: white;
+    font-weight: bold;
+    font-size: 5em;
+    text-align: center;
+    margin-top: 1.175em;
+}
+
+.box-carousel h3 {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.box-carousel .items,
+.modal-body .items {
+    position: absolute;
+}
+
+.box-carousel .main-pos {
+    z-index: 1020;
+    cursor: pointer;
+}
+
+.box-carousel .left-pos,
+.modal-body .left-pos {
+    opacity: .8;
+    margin-left: -280px;
+    z-index: 1000;
+    -webkit-transform: scale(.75);
+    -moz-transform: scale(.75);
+    transform: scale(.75);
+}
+
+.box-carousel .left-pos::after,
+.box-carousel .right-pos::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(168, 168, 168, 0.8);
+    left: 0;
+    top: 0;
+}
+
+.box-carousel .back-pos,
+.modal-body .back-pos {
+    margin-left: 2em !important;
+    opacity: 0;
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    transform: scale(.5);
+}
+
+.box-carousel .right-pos,
+.modal-body .right-pos {
+    opacity: .8;
+    margin-left: 280px;
+    z-index: 1000;
+    -webkit-transform: scale(.75);
+    -moz-transform: scale(.75);
+    transform: scale(.75);
+}
+
+/* .productos span {
+    position: relative;
+    margin: 0 auto;
+    left: 17em;
+    top: 20em;
+} */
+
+#prev,
+#next {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#prev {
+    left: -210px;
+}
+
+#next {
+    right: -210px;
+}
+
+#prev img,
+#next img {
+    width: 25px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

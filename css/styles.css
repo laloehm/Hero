@@ -8,6 +8,31 @@
     src: url("../Fonts/poppins/Poppins-Thin.otf");
 }
 
+@font-face {
+    font-family: "Popins-Medium";
+    src: url("../Fonts/poppins/Poppins-Medium.otf");
+}
+
+@font-face {
+    font-family: "Popins-Regular";
+    src: url("../Fonts/poppins/Poppins-Regular.otf");
+}
+
+@font-face {
+    font-family: "Avenir-Bold";
+    src: url("../Fonts/Avenir-Next/Avenir-Bold.otf");
+}
+
+@font-face {
+    font-family: "Avenir-Medium";
+    src: url("../Fonts/Avenir-Next/Avenir-Medium.otf");
+}
+
+@font-face {
+    font-family: "Avenir-Regular";
+    src: url("../Fonts/Avenir-Next/Avenir-Regular.otf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +44,15 @@
 }
 
 h2 {
-    font-family: 'Popins-Bold', serif;
+    font-family: 'Avenir-Bold', serif;
+}
+
+p,
+label,
+a,
+button {
+    font-family: 'Avenir-Regular', serif;
+    letter-spacing: 1px;
 }
 
 a:hover {
@@ -33,9 +66,11 @@ a:hover {
 
 .icon {
     width: 35px;
-    height: 35px;
-    margin-left: auto;
+    height: 15px;
     cursor: pointer;
+    position: relative;
+    margin-left: auto;
+    right: 0;
 }
 
 .navbar .icon span {
@@ -43,21 +78,119 @@ a:hover {
     height: 4px;
     display: block;
     background: #000;
-    margin: 5px 0;
+    position: absolute;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}
+
+.navbar .icon span:nth-child(2) {
+    bottom: 0;
+}
+
+.navbar .icon span.span-active:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.navbar .icon span.span-active:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+.navbar .links {
+    margin-left: auto;
+    margin-right: 50px;
+    display: none;
+}
+
+.navbar .links a {
+    color: #292929;
+    position: relative;
+}
+
+.navbar .links a:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background: #000;
+    height: 3px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.navbar .links.menu-active {
+    display: block;
+}
+
+.navbar .links a {
+    margin: 0 10px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    background: #000;
+    height: 6px;
+    border-radius: 50px;
+    margin-top: 8px;
 }
 
 .home {
     height: 100vh;
     text-align: center;
     max-height: 700px;
+    position: relative;
 }
 
 .home h1 {
-    font-family: 'Popins-Thin', serif;
-    width: 80%;
+    font-family: 'Avenir-Regular', serif;
+    /* width: 80%; */
     margin-top: 1.5rem;
     font-size: 2rem;
     text-align: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 15%;
+}
+
+.home h1::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 10px;
+}
+
+.home h1::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 15px;
 }
 
 .home img {
@@ -68,6 +201,43 @@ a:hover {
 
 .home h1 {
     font-weight: 300;
+}
+
+/* Nosotros */
+.about,
+.fundaciones {
+    min-height: 550px;
+}
+
+.about .carousel-item {
+    height: 330px;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .carousel-item .content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.about .carousel-indicators {
+    position: relative;
+}
+
+.about .carousel-indicators li {
+    background: #000;
+    border: 0;
 }
 
 /* Fundaciones */
@@ -88,7 +258,7 @@ a:hover {
 }
 
 .fundaciones .categorias .categoria:hover {
-    flex: 10;
+    flex: 18;
 }
 
 .fundaciones .categorias .categoria:hover h2 {
@@ -110,13 +280,20 @@ a:hover {
     background: fff;
 }
 
-.categoria:nth-child(odd) {
+/* .categoria:nth-child(odd) {
     background: #000;
     color: #fff;
+} */
+
+.categorias .mujeres {
+    background-image: url(../images/Categorias/mujeres_BN.png) !important;
+
 }
 
 a.btn-donar {
-    background: #000;
+    /* background: #000; */
+    background: rgb(255, 255, 255);
+    background: linear-gradient(149deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 63%);
     color: #fff;
     display: block;
     width: 100px;
@@ -156,4 +333,234 @@ a.btn-donar {
     position: absolute;
     right: -50px;
     top: calc(50% - 15px);
+}
+
+/* Heroes */
+.heroes {
+    background: #f9f9f9;
+    height: 600px;
+}
+
+/* Contact */
+form button {
+    /* background-image: linear-gradient(160deg, #f2f2f2 0, #3b3b3b 40%, #000000 100%) !important;
+    border: 0 !important;
+    border-radius: 20px !important;
+    width: 125px; */
+    background: white !important;
+    color: black !important;
+    border: 1px solid #ced4da !important;
+    border-radius: 5px !important;
+    box-shadow: 5px 5px 10px #ced4da;
+}
+
+.newsletter {
+    border: 1px solid #ebebeb;
+    border-radius: 35px;
+    box-shadow: 5px 5px 8px #ebebeb;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #ebebeb;
+    box-shadow: 3px 3px 3px #ebebeb;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer img {
+    width: 170px;
+}
+
+/* Modals */
+
+.modal-content {
+    background: #212326;
+    color: #fff;
+}
+
+.modal-content img {
+    width: 150px;
+}
+
+.modal-content h4 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #f7f8fc;
+}
+
+#modalDos h4.title::after {
+    content: '';
+    width: 100px;
+    height: 3px;
+    display: block;
+    background: #fff;
+}
+
+.modal-content p {
+    color: #5c5e61;
+    font-size: 14px;
+}
+
+#modalDos {
+    background: rgba(0, 0, 0, .95);
+}
+
+#modalDos .modal-content {
+    background: #fff;
+    color: black;
+}
+
+#modalDos .modal-content h4 {
+    color: black;
+}
+
+#modalDos h4.title::after {
+    content: '';
+    width: 135px;
+    height: 3px;
+    display: block;
+    background: #fff;
+    position: absolute;
+    margin: 0;
+    right: 5%;
+}
+
+#modalDos h4.title::before {
+    content: '';
+    width: 135px;
+    height: 3px;
+    display: block;
+    background: #fff;
+    position: absolute;
+    margin: 0;
+    left: 5%;
+}
+
+#modalDos .modal-content .col-md-5::after {
+    content: '';
+    display: block;
+    height: 180px;
+    width: 3px;
+    background: #000;
+    left: 10%;
+    position: absolute;
+}
+
+/* #modalDos .modal-content .modal-body::after {
+    content: '';
+    display: block;
+    height: 180px;
+    width: 7px;
+    background: #000;
+    left: -2px;
+    position: absolute;
+    bottom: 0;
+}
+
+#modalDos .modal-content .modal-body::before {
+    content: '';
+    display: block;
+    width: 180px;
+    height: 7px;
+    background: #000;
+    left: -2px;
+    position: absolute;
+    bottom: -1px;
+}
+
+#modalDos .modal-content::after {
+    content: '';
+    display: block;
+    height: 180px;
+    width: 7px;
+    background: #000;
+    right: -2px;
+    position: absolute;
+    top: 0;
+}
+
+#modalDos .modal-content::before {
+    content: '';
+    display: block;
+    width: 180px;
+    height: 7px;
+    background: #000;
+    right: -2px;
+    position: absolute;
+    top: -1px;
+} */
+
+#modalMujeres .modal-content .col-md-5::after {
+    content: '';
+    display: block;
+    height: 150px;
+    width: 3px;
+    background: #fff;
+    left: 10%;
+    position: absolute;
+}
+
+#modalMujeres .modal-content .modal-body::after {
+    content: '';
+    display: block;
+    height: 130px;
+    width: 4px;
+    background: #fff;
+    left: -2px;
+    position: absolute;
+    bottom: 0;
+}
+
+#modalMujeres .modal-content .modal-body::before {
+    content: '';
+    display: block;
+    width: 130px;
+    height: 4px;
+    background: #fff;
+    left: -2px;
+    position: absolute;
+    bottom: -1px;
+}
+
+#modalMujeres .modal-content::after {
+    content: '';
+    display: block;
+    height: 130px;
+    width: 4px;
+    background: #fff;
+    right: -2px;
+    position: absolute;
+    top: 0;
+}
+
+#modalMujeres .modal-content::before {
+    content: '';
+    display: block;
+    width: 130px;
+    height: 4px;
+    background: #fff;
+    right: -2px;
+    position: absolute;
+    top: -1px;
+}
+
+#modalMujeres .close {
+    color: rgba(255, 255, 255, .5);
+}
+
+
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 850px;
+        margin: 1.75rem auto;
+    }
 }
