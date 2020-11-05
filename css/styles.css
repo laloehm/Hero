@@ -240,12 +240,17 @@ a:hover {
     border: 0;
 }
 
+.about .carousel-item span {
+    font-family: 'Avenir-Bold', serif;
+}
+
 /* Fundaciones */
 .fundaciones .categorias {
     margin: 0;
     height: 400px;
     display: flex;
     box-sizing: border-box;
+    color: #fff;
 }
 
 .fundaciones .categorias .categoria {
@@ -287,7 +292,50 @@ a:hover {
 
 .categorias .mujeres {
     background-image: url(../images/Categorias/mujeres_BN.png) !important;
+    background-size: cover;
+    background-position: right;
+}
 
+.categorias .niños {
+    background-image: url(../images/Categorias/niños_BN.png) !important;
+    background-size: cover;
+    background-position: right;
+}
+
+.categorias .educacion {
+    background-image: url(../images/Categorias/Educacion_BN.png) !important;
+    background-size: cover;
+    background-position: right;
+}
+
+.categorias .cancer {
+    background-image: url(../images/Categorias/Cancer_BN.png) !important;
+    background-size: cover;
+    background-position: right;
+}
+
+.categorias .reconstruccion {
+    background-image: url(../images/Categorias/reconstruccion_BN.png) !important;
+    background-size: cover;
+    background-position: right;
+}
+
+.categorias .animales {
+    background-image: url(../images/Categorias/Animales_BN.png) !important;
+    background-size: cover;
+    background-position: right;
+}
+
+.categorias .ecologia {
+    background-image: url(../images/Categorias/Ecologico_BN.png) !important;
+    background-size: cover;
+    background-position: right;
+}
+
+.categorias .salud {
+    background-image: url(../images/Categorias/Salud_BN.png) !important;
+    background-size: cover;
+    background-position: center;
 }
 
 a.btn-donar {
