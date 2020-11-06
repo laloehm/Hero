@@ -344,16 +344,9 @@ a:hover {
 }
 
 a.btn-donar {
-    /* background: #000; */
-    background: rgb(255, 255, 255);
-    background: linear-gradient(149deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 63%);
-    color: #fff;
     display: block;
-    width: 100px;
-    margin: 1rem auto;
-    text-align: center;
-    padding: .5rem;
-    border-radius: 20px;
+    width: 150px;
+    margin: 0 auto;
 }
 
 .owl-prev {
@@ -400,11 +393,27 @@ form button {
     border: 0 !important;
     border-radius: 20px !important;
     width: 125px; */
-    background: white !important;
+    /* background: white !important;
     color: black !important;
     border: 1px solid #ced4da !important;
     border-radius: 5px !important;
-    box-shadow: 5px 5px 10px #ced4da;
+    box-shadow: 5px 5px 10px #ced4da; */
+}
+
+.btn-enviar {
+    background-image: url(../images/enviar.svg);
+    background-size: cover;
+    width: 150px;
+    height: 40px;
+    border: none;
+}
+
+.btn-suscribirse {
+    background-image: url(../images/suscribirse.svg);
+    background-size: cover;
+    width: 190px;
+    height: 40px;
+    border: none;
 }
 
 .newsletter {
@@ -428,8 +437,28 @@ footer a {
     color: #fff;
 }
 
+footer a:hover {
+    color: #6b6363;
+}
+
+footer p.derechos {
+    font-size: 13px;
+}
+
 footer img {
     width: 170px;
+}
+
+footer .redes {
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+footer .redes img {
+    width: 25px;
 }
 
 /* Modals */
