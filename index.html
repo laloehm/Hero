@@ -40,6 +40,7 @@
     </section>
 
     <section class="about my-5" id="nosotros">
+        <img src="images/Pleca.png" class="pleca" alt="">
         <div class="container">
             <h2 class="title">NOSOTROS</h2>
             <div class="my-5 pb-5">
@@ -84,25 +85,25 @@
                 <div class="categoria mujeres" data-toggle="modal" data-target="#modalMujeres">
                     <h2>MUJERES</h2>
                 </div>
-                <div class="categoria niños" data-toggle="modal" data-target="#modalDos">
+                <div class="categoria niños" data-toggle="modal" data-target="#modalNiños">
                     <h2>NIÑOS</h2>
                 </div>
-                <div class="categoria educacion" data-toggle="modal" data-target="#exampleModalCenter">
+                <div class="categoria educacion" data-toggle="modal" data-target="#modalEducacion">
                     <h2>EDUCACIÓN</h2>
                 </div>
-                <div class="categoria reconstruccion" data-toggle="modal" data-target="#exampleModalCenter">
+                <div class="categoria reconstruccion" data-toggle="modal" data-target="#modalReconstruccion">
                     <h2>RECONSTRUCCIÓN</h2>
                 </div>
-                <div class="categoria animales" data-toggle="modal" data-target="#exampleModalCenter">
+                <div class="categoria animales" data-toggle="modal" data-target="#modalAnimales">
                     <h2>ANIMALES</h2>
                 </div>
-                <div class="categoria ecologia" data-toggle="modal" data-target="#exampleModalCenter">
+                <div class="categoria ecologia" data-toggle="modal" data-target="#modalEcologia">
                     <h2>ECOLOGÍA</h2>
                 </div>
-                <div class="categoria salud" data-toggle="modal" data-target="#exampleModalCenter">
+                <div class="categoria salud" data-toggle="modal" data-target="#modalSalud">
                     <h2>SALUD</h2>
                 </div>
-                <div class="categoria cancer" data-toggle="modal" data-target="#exampleModalCenter">
+                <div class="categoria cancer" data-toggle="modal" data-target="#modalCancer">
                     <h2>CANCER</h2>
                 </div>
             </div>
@@ -112,9 +113,7 @@
 
     <section class="heroes my-5 py-5" id="heroes">
         <div class="container">
-            <h2 class="title">NUESTROS HERÓES</h2>
-            <div class="px-5 my-5">
-                <!-- <div class="owl-carousel owl-theme">
+            <!-- <div class="owl-carousel owl-theme">
                     <div class="item">
                         <img src="images/Marian-300x300.jpg" alt="">
                     </div>
@@ -152,9 +151,7 @@
                         <h4>12</h4>
                     </div>
                 </div> -->
-            </div>
-
-            <div class="px-md-5 box-carousel">
+            <!-- <div class="px-md-5 box-carousel">
                 <ul class="carousel d-flex align-items-center flex-column">
                     <li class="items main-pos" data-toggle="modal" data-target="#modalSemillas" id="1">
                         <img src="images/Heroes/Lorena_Ochoa.jpg" class="img-fluid" alt="">
@@ -207,7 +204,23 @@
                 </ul>
                 <div class="d-none d-md-block" id="prev"><img src="images/Prev.svg" alt=""></div>
                 <div class="d-none d-md-block" id="next"><img src="images/Next.svg" alt=""></div>
+            </div> -->
+
+            <div class="row">
+                <div class="col-md-7 d-flex flex-column justify-content-center ">
+                    <h2 class="title">NUESTROS HERÓES</h2>
+                    <p class="my-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem saepe perspiciatis consequatur corporis eligendi, incidunt consequuntur, ipsum illo odit aliquid distinctio magni tempora debitis minima molestiae nesciunt rem doloremque consectetur.</p>
+                    <a href="heroes-hero.html"><img src="images/conocelos.svg" class="conocelos" alt=""></a>
+                </div>
+                <div class="col-md-5 box-img">
+                    <span></span>
+                    <span></span>
+                    <a href="heroes-hero.html"><img src="images/Heroes.png" class="img-fluid" alt=""></a>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
+
         </div>
     </section>
 
@@ -218,30 +231,30 @@
                     <h2 class="title mb-5">CONTACTO</h2>
                     <form class="">
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Nombre completo</label>
+                            <label for="name">Nombre completo</label>
                             <input type="text" class="form-control" id="name" name="name">
                         </div>
                         <div class="row">
                             <div class="col-md-6 pl-0">
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Email</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email">
                                 </div>
                             </div>
                             <div class="col-md-6 pr-0">
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Teléfono</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <label for="phone">Teléfono</label>
+                                    <input type="text" class="form-control" id="phone">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Mensaje</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <label for="message">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
                         </div>
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Acepto terminos y condiciones</label>
+                            <label class="form-check-label" for="exampleCheck1">Acepto términos y condiciones</label>
                         </div>
                         <button type="submit" class="btn-enviar"></button>
                     </form>
@@ -255,7 +268,7 @@
                         </div>
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Acepto terminos y condiciones</label>
+                            <label class="form-check-label" for="exampleCheck1">Acepto términos y condiciones</label>
                         </div>
                         <button type="submit" class="btn-suscribirse mt-4"></button>
                     </form>
@@ -289,7 +302,7 @@
         </div>
     </footer>
 
-    <!-- Modal -->
+    <!-- Mujeres -->
     <div class="modal fade" id="modalMujeres" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -300,41 +313,654 @@
                     </button>
                 </div>
                 <div class="modal-body p-4">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <h4>Asociación Mexicana de Fibrosis Quística Ac</h4>
-                            <p>Nacen en México 350 niñas y niños con FQ al año, sin embargo, el 85% muere en etapas tempranas de la infancia por complicaciones respiratorias y desnutrición. Ante la necesidad de contar con diagnósticos oportunos, tratamientos adecuados y de brindar una mejor calidad de vida a los pacientes y sus familias, en 1982 se constituyó la Asociación Mexicana de Fibrosis
-                                Quística, A.C. (AMFQ) como una asociación civil sin fines de lucro.</p>
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h4>Fundación origen</h4>
+                                        <p>Plataforma integral de atención para la mujer y su familia, que ofrece programas de Desarrollo Humano y Económico para romper con el círculo de la violencia y disminuir la pobreza en nuestro país.</p>
+                                    </div>
+                                    <div class="col-md-5 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/3/Fundacion-Origen.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h4>Asociación Mexicana de Fibrosis Quística Ac</h4>
+                                        <p>Nacen en México 350 niñas y niños con FQ al año, sin embargo, el 85% muere en etapas tempranas de la infancia por complicaciones respiratorias y desnutrición. Ante la necesidad de contar con diagnósticos oportunos, tratamientos adecuados y de brindar una mejor calidad de vida a los pacientes y sus familias, en 1982 se constituyó la Asociación Mexicana de
+                                            Fibrosis
+                                            Quística, A.C. (AMFQ) como una asociación civil sin fines de lucro.</p>
+                                    </div>
+                                    <div class="col-md-5 d-flex justify-content-center align-items-center">
+                                        <img src="images/Categorias/Fibrosis.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h4>Asociación Mexicana de Fibrosis Quística Ac</h4>
+                                        <p>Nacen en México 350 niñas y niños con FQ al año, sin embargo, el 85% muere en etapas tempranas de la infancia por complicaciones respiratorias y desnutrición. Ante la necesidad de contar con diagnósticos oportunos, tratamientos adecuados y de brindar una mejor calidad de vida a los pacientes y sus familias, en 1982 se constituyó la Asociación Mexicana de
+                                            Fibrosis
+                                            Quística, A.C. (AMFQ) como una asociación civil sin fines de lucro.</p>
+                                    </div>
+                                    <div class="col-md-5 d-flex justify-content-center align-items-center">
+                                        <img src="images/Categorias/Fibrosis.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-5 d-flex justify-content-center align-items-center">
-                            <img src="images/Categorias/Fibrosis.svg" class="img-fluid" alt="">
-                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="modalDos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <!-- Niños -->
+    <div class="modal fade" id="modalNiños" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header px-4">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">MUJERES</h5>
+                    <h5 class="modal-title" id="exampleModalCenterTitle">NIÑOS</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body p-4">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <h4>Asociación Mexicana de Fibrosis Quística Ac</h4>
-                            <p>Nacen en México 350 niñas y niños con FQ al año, sin embargo, el 85% muere en etapas tempranas de la infancia por complicaciones respiratorias y desnutrición. Ante la necesidad de contar con diagnósticos oportunos, tratamientos adecuados y de brindar una mejor calidad de vida a los pacientes y sus familias, en 1982 se constituyó la Asociación Mexicana de Fibrosis
-                                Quística, A.C. (AMFQ) como una asociación civil sin fines de lucro.</p>
+                    <div id="carouselNinos" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Asociación Mexicana de Fibrosis Quística Ac</h4>
+                                        <p>Nacen en México 350 niñas y niños con FQ al año, sin embargo, el 85% muere en etapas tempranas de la infancia por complicaciones respiratorias y desnutrición. Ante la necesidad de contar con diagnósticos oportunos, tratamientos adecuados y de brindar una mejor calidad de vida a los pacientes y sus familias, en 1982 se constituyó la
+                                            Asociación Mexicana de
+                                            Fibrosis
+                                            Quística, A.C. (AMFQ) como una asociación civil sin fines de lucro.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/1/logo_amfq_vertical.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Make - a - Wish México</h4>
+                                        <p>Aproximadamente 300,000 niños al año son diagnosticados con cáncer. Make A Wish cumple deseos a niños que tienen enfermedades críticas para brindarles esperanza, alegría y fortaleza.</p>
+                                        <p>Diseñamos deseos que transforman la vida de los niños, sus familiares y de todos los involucrados: personal médico, donantes, voluntarios y comunidades completas. Llevamos 40 años trabajando a nivel internacional y 8 años cumpliendo deseos en México, habiendo beneficiado a más de 1350 niños mexicanos y a 15,000 personas indirectamente.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/8/MAW_Mexico_PMS-C [Convertido].svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Fundación Ana y Juanpa</h4>
+                                        <p>Nuestra fundación apoya familias con niños con enfermedades crónicas que no pueden pagar sus tratamientos así como ayuda y orientación a las familias tanto en la atención a los pacientes como la búsqueda de doctores en México y en el extranjero para poder atender estas enfermedades de forma integral. Apoyo psicológico, asesoría para la recaudación de
+                                            fondos y el aspecto nutricional.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/14/logo-Ana-y-juanpa.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Fundación Andrés Guardado</h4>
+                                        <p>creemos que todos tenemos una misión en la vida, por eso acompañamos los sueños de niños, niñas y adolescentes y les ayudamos a cumplirlos.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/17/LogotipoFundacionAG (2).svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Yad Rajamim</h4>
+                                        <p>Institución de desarrollo integral, que brinda apoyo a niños, jóvenes y familias para fortalecerlos como individuos logrando un desarrollo óptimo que les permita superarse y ser personas que formen familias funcionales, teniendo un papel activo dentro de su comunidad. A lo largo de los años hemos sido testigos de que nuestro trabajo interinstitucional
+                                            rompe con las problemáticas generacionales que vemos todos los días. Hemos logrado dar de alta a más de 100 familias y hemos cambiado la vida de más de 500 familias.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/21/Yad Rajamim Logotipo (Curvas) .svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4> Comedor Santa María</h4>
+                                        <p>Comedor Santa María es una Asociación Civil que desde 1995 trabaja para ayudar a los niños más vulnerables de la sociedad a cubrir una necesidad primaria: la alimentación. Actualmente tenemos el honor de servir a más de 10,100 niños todos los días y tratar a cada uno como si fuera el único. Trabajamos como una franquicia social para poder replicar el
+                                            comedor en donde se necesite: tenemos 31 comedores iguales a este alrededor del país, donde servimos comidas de la más alta calidad, para nutrirlos y permitir que se desarrollen bien.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/24/LOGO---Fernanda-Malo-Ochoa.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Ayuda y solidaridad de niñas de la calle IAP</h4>
+                                        <p>Ayuda y Solidaridad con las Niñas de la Calle es una Institución de Asistencia Privada (IAP) cuya misión es brindar atención y un ambiente de cariño a Niñas, Adolescentes y Jóvenes que han sido rescatas de situaciones de amplia vulnerabilidad, tales como abandono de cuidados, pobreza, inseguridad,
+                                            desintegración familiar, orfandad y violencias múltiples. Nuestra atención se basa en un modelo personalizado, integral y multidisciplinario, con enfoque humanista y basado en derechos humanos. Nuestro modelo de atención cubre todas las dimensiones de desarrollo del ser humano, con el objetivo de brindar herramientas reales a las Niñas, Adolescentes y
+                                            Jóvenes para que puedan romper el círculo de vulnerabilidad, pobreza y violencia.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/25/Ayuda y Solidaridad.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Dr. Sonrisas</h4>
+                                        <p>Somos una institución que representa un despertar de conciencia y ojos abiertos, de querer un mundo mejor, de vivir sueños despiertos. Tenemos la misión de cambiar el dolor y sufrimiento de niños y niñas con alguna enfermedad cronica o avanzada  por momentos de esperanza, diversión y alegría haciendo realidad los más grandes sueños. Hemos hecho realidad
+                                            más de 5000 sueños desde tener una fiesta de cumpleaños, ser bombero o chef hasta conocer el mar o Disney. Brindamos apoyo integral, no sólo al paciente, sino, a toda su familia, con un soporte anímico y psicológico a través de los diversos programas de Dr. Sonrisas.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/43/logo y slogan (1)-1.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Vamos para delante A.C.</h4>
+                                        <p>Somos una asociación sin fines de lucro que nuestro objetivo principal es mejorar la calidad de vida de todo niño de escasos recursos en situación vulnerable. El diagnóstico temprano y el tratamiento oportuno pueden hacer la diferencia entre la vida o la muerte de una persona, ya que el 70% de los casos son curables si se atienden a tiempo. En México solo
+                                            existen 135 oncólogos pediatras para los más de cinco mil casos de cáncer infantil que se registran anualmente cada año fallecen en promedio 2 mil 300 menores.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/56/Vamos-para-adelante.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-5 d-flex justify-content-center align-items-center">
-                            <img src="images/Categorias/Unidos-Black.svg" class="img-fluid" alt="">
+                        <a class="carousel-control-prev" href="#carouselNinos" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselNinos" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Educacion -->
+    <div class="modal fade" id="modalEducacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">EDUCACIÓN</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <div id="carouselEducacion" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Fundación BECAR IAP</h4>
+                                        <p>Fundación BECAR I.A.P. es una Institución de Asistencia Privada constituida en el año 2000 para apoyar la educación de calidad en México y lograr una transformación social. En los últimos 20 años se han otorgado más de 37,000 becas a niños, niñas, jóvenes e integrantes de la comunidad educativa de 22 colegios afiliados en 10 estados de la República. En
+                                            Fundación BECAR tenemos un compromiso muy grande con la sociedad: buscamos rescatar la Educación en México para no solo encontrar la solución a una problemática, sino a todas. El promedio de ingresos en las familias de nuestros becados no son arriba de $90 diarios. En Fundación BECAR seguimos apostando por la educación, creemos que es el arma más
+                                            poderosa para transformar vidas, y así, nuestro México. Gracias a tu generosidad y a la de las organizaciones que nos respaldan, podremos seguir transformando vidas.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/100/Becar.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>SEDAC IAP</h4>
+                                        <p>Hoy en día SEDAC Centro Educativo tiene más de 700 alumnos en los grados de preescolar y primaria, todos los niños reciben educación de calidad, aprendizaje en valores, atención psicológica, taichi, ajedrez, clases extracurriculares de fútbol y servicio de comedor escolar para que tengan un excelente aprovechamiento académico dentro del aula. Se imparte
+                                            “escuela para padres” en sesiones de 2 horas todos los martes, y la asistencia de los padres de familia es obligatoria. Es un espacio abierto para las personas de toda la comunidad que así lo soliciten. A lo largo de la trayectoria de SEDAC se han apoyado a más de 10,000 niños que al día de hoy cuentan con estudios terminados y son personas generadoras
+                                            de cambio en la comunidad y en México.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/92/Sedac.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Educación para compartir</h4>
+                                        <p>Es una organización internacional que busca mejores ciudadanos desde la niñez a través de la innovación educativa basada en el poder del juego. A lo largo de 13 años, EpC ha beneficiado a más de 1.3 millones de niñas, niños, docentes, madres y padres en México y comunidades de Estados Unidos, Guatemala, Argentina, Panamá, República Dominicana, Bolivia y
+                                            Nueva Zelanda. La oferta de EpC se compone de seis programas educativos -Deportes, Ciencia, Arte, Finanzas e Iniciativas para Compartir además de Ciudadanía Digital- donde se capacita a los docentes de educación básica para que se apropien de la metodología y transforme su modelo de enseñanza por uno que promueva la participación de sus estudiantes.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/90_2/Empecemos-hoy.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Únete</h4>
+                                        <p>es una asociación civil sin fines de lucro, con 20 años de experiencia en incorporar la tecnología en la educación básica en escuelas públicas a nivel nacional, buscando el desarrollo de habilidades digitales del siglo XXI. Nuestra misión es Mejorar la Calidad y la Equidad de la Educación en México, así como Conectar la Educación con el Futuro. Creemos
+                                            que cada niño y niña en México necesita acceder a una educación de calidad para construir su propio futuro y transformar su vida. Gracias a nuestros donantes, aliados y autoridades educativas hemos logrado equipar 9,336 escuelas, en las que dan clases 112,517 profesores y 2,745,106 estudiantes se ven beneficiados en su proceso de aprendizaje. Estamos
+                                            presente en la mitad de los municipios del país. El Modelo ÚNETE empodera a los docentes para que puedan integrar la tecnología en el proceso de enseñanza-aprendizaje con la ayuda de dos componentes, Infraestructura Tecnológica y Programa de Fortalecimiento Escolar para que puedan integrar la tecnología en el proceso de enseñanza-aprendizaje mediante el
+                                            acompañamiento presencial.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/88/Unete.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Niños en Alegría</h4>
+                                        <p>Nace en 2003, desde ese entonces, ha trabajado en la reconstrucción y equipamiento tecnológico de las primarias en situaciones de vulnerabilidad dentro del Estado de Guerrero, en donde al día de hoy, se han entregado 23 escuelas. Además, desde de 2017 se implementaron programas que acercan a los estudiantes a las TIC´s, lo que les ha permitido reducir la
+                                            brecha digital existente hoy en día en la sociedad. La fundación tiene presencia en 7 municipios (Acapulco, Chilpancingo, San Marcos, Coyuca, Iguala, Zihuatanejo y Salina Cruz en Oaxaca). En 17 años se han beneficiado a más de 30 mil alumnos y 1,700 docentes de las 104 escuelas atendidas, asimismo se han donado más de 18 mil útiles escolares y 270
+                                            computadoras. Además, se han enviado a 555 niños a campamentos en México y España</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/83/Ninos-en-alegria.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <a class="carousel-control-prev" href="#carouselEducacion" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselEducacion" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Reconstruccion -->
+    <div class="modal fade" id="modalReconstruccion" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">RECONSTRUCCIÓN</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <div id="carouselEducacion" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Asociación Gilberto A.C.</h4>
+                                        <p>Trabajamos desde 1988 para servir a México promoviendo la construcción, reconstrucción, mejoramiento de viviendas y servicios comunitarios, así como la reactivación o creación de fuentes de trabajo, la promoción de la salud y la educación para la población más vulnerable tanto en situación de desastre como de forma permanente. Hoy tenemos 909 asociadas
+                                            trabajando en 32 delegaciones repartidas en 28 estados de la República. 7,728,658 personas beneficiadas en 31 años.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/94/Gilberto.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselEducacion" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselEducacion" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Animales -->
+    <div class="modal fade" id="modalAnimales" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">ANIMALES</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Animal Karma</h4>
+                                        <p>Nos dedicamos al rescate de ecosistemas y especies que habitan en ellos. Apoyamos principalmente a los felinos y a los grandes primates. Estamos abiertos a recibir nuevas causas que podamos impulsar y apoyar. Trabajamos en proyectos gubernamentales, así como universitarios en donde colaboramos en el cuidado de ecosistemas. Nuestra base de voluntarios
+                                            logra materializar los planes para cumplir con los objetivos. Mediante distintas acciones fomentamos la educación juvenil en rubros de conservación de especies en peligro de extinción. </p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/60/logo.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h4>Panthera</h4>
+                                        <p>Panthera es la única organización dedicada exclusivamente a la conservación de todas las especies de felinos silvestres amenazados del mundo y sus ecosistemas. Con la experiencia de los expertos en felinos más importantes del mundo, Panthera desarrolla e implementa estrategias de conservación para los felinos en peligro: tigres, leones, jaguares,
+                                            leopardos de las nieves, pumas, leopardos, entre otros. Desde hace 5 años establecimos un programa en México y desde entonces hemos trabajado directamente en áreas prioritarias del país como Campeche, Jalisco y Sinaloa.</p>
+                                    </div>
+                                    <div class="col-md-5 d-flex justify-content-center align-items-center">
+                                        <img src="images/Categorias/Fibrosis.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h4>Santuario el Camino</h4>
+                                        <p>Somos una fundación que nos dedicamos a rescatar y rehabilitar animales que han sufrido abuso, abandono o accidentes, principalmente animales de granja como lo son los: burros, caballos, chivos, yeguas, gallos, gallinas, cabras, borregos, cerdos y perros. Los animales que hemos rescatado han sido torturados, abandonados, atropellados y tratados con
+                                            crueldad y violencia. México tiene el tercer lugar en maltrato animal. Tan sólo en la Ciudad de México se sacrifican nueve de cada 10 perros y gatos que no fueron reclamados o adoptados.</p>
+                                    </div>
+                                    <div class="col-md-5 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/80/Santuario-el-camino.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ecologia -->
+    <div class="modal fade" id="modalEcologia" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">ECOLOGÍA</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <div id="carouselEducacion" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Fundación BECAR IAP</h4>
+                                        <p>Fundación BECAR I.A.P. es una Institución de Asistencia Privada constituida en el año 2000 para apoyar la educación de calidad en México y lograr una transformación social. En los últimos 20 años se han otorgado más de 37,000 becas a niños, niñas, jóvenes e integrantes de la comunidad educativa de 22 colegios afiliados en 10 estados de la República. En
+                                            Fundación BECAR tenemos un compromiso muy grande con la sociedad: buscamos rescatar la Educación en México para no solo encontrar la solución a una problemática, sino a todas. El promedio de ingresos en las familias de nuestros becados no son arriba de $90 diarios. En Fundación BECAR seguimos apostando por la educación, creemos que es el arma más
+                                            poderosa para transformar vidas, y así, nuestro México. Gracias a tu generosidad y a la de las organizaciones que nos respaldan, podremos seguir transformando vidas.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/100/Becar.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Asociación Mexicana de Fibrosis Quística Ac</h4>
+                                        <p>Nacen en México 350 niñas y niños con FQ al año, sin embargo, el 85% muere en etapas tempranas de la infancia por complicaciones respiratorias y desnutrición. Ante la necesidad de contar con diagnósticos oportunos, tratamientos adecuados y de brindar una mejor calidad de vida a los pacientes y sus familias, en 1982 se constituyó la Asociación Mexicana de
+                                            Fibrosis
+                                            Quística, A.C. (AMFQ) como una asociación civil sin fines de lucro.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Categorias/Fibrosis.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Asociación Mexicana de Fibrosis Quística Ac</h4>
+                                        <p>Nacen en México 350 niñas y niños con FQ al año, sin embargo, el 85% muere en etapas tempranas de la infancia por complicaciones respiratorias y desnutrición. Ante la necesidad de contar con diagnósticos oportunos, tratamientos adecuados y de brindar una mejor calidad de vida a los pacientes y sus familias, en 1982 se constituyó la Asociación Mexicana de
+                                            Fibrosis
+                                            Quística, A.C. (AMFQ) como una asociación civil sin fines de lucro.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Categorias/Fibrosis.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselEducacion" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselEducacion" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Salud -->
+    <div class="modal fade" id="modalSalud" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">SALUD</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <div id="carouselSalud" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Fundación BECAR IAP</h4>
+                                        <p>Fundación BECAR I.A.P. es una Institución de Asistencia Privada constituida en el año 2000 para apoyar la educación de calidad en México y lograr una transformación social. En los últimos 20 años se han otorgado más de 37,000 becas a niños, niñas, jóvenes e integrantes de la comunidad educativa de 22 colegios afiliados en 10 estados de la República. En
+                                            Fundación BECAR tenemos un compromiso muy grande con la sociedad: buscamos rescatar la Educación en México para no solo encontrar la solución a una problemática, sino a todas. El promedio de ingresos en las familias de nuestros becados no son arriba de $90 diarios. En Fundación BECAR seguimos apostando por la educación, creemos que es el arma más
+                                            poderosa para transformar vidas, y así, nuestro México. Gracias a tu generosidad y a la de las organizaciones que nos respaldan, podremos seguir transformando vidas.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/100/Becar.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Asociación Mexicana de Fibrosis Quística Ac</h4>
+                                        <p>Nacen en México 350 niñas y niños con FQ al año, sin embargo, el 85% muere en etapas tempranas de la infancia por complicaciones respiratorias y desnutrición. Ante la necesidad de contar con diagnósticos oportunos, tratamientos adecuados y de brindar una mejor calidad de vida a los pacientes y sus familias, en 1982 se constituyó la Asociación Mexicana de
+                                            Fibrosis
+                                            Quística, A.C. (AMFQ) como una asociación civil sin fines de lucro.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Categorias/Fibrosis.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Asociación Mexicana de Fibrosis Quística Ac</h4>
+                                        <p>Nacen en México 350 niñas y niños con FQ al año, sin embargo, el 85% muere en etapas tempranas de la infancia por complicaciones respiratorias y desnutrición. Ante la necesidad de contar con diagnósticos oportunos, tratamientos adecuados y de brindar una mejor calidad de vida a los pacientes y sus familias, en 1982 se constituyó la Asociación Mexicana de
+                                            Fibrosis
+                                            Quística, A.C. (AMFQ) como una asociación civil sin fines de lucro.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Categorias/Fibrosis.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselSalud" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselSalud" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cancer -->
+    <div class="modal fade" id="modalCancer" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">CANCER</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <div id="carouselCancer" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>VAPORTI contra el Cáncer de Páncreas</h4>
+                                        <p>Es la primera y hasta hoy única fundación que apoya este tipo de cáncer. Se sabe que muchos pacientes pierden meses o inclusive años entre el primer síntoma y un diagnóstico final, por lo que uno de nuestros principales objetivos es mantener campañas constantes de educación las cuales buscan como objetivo primordial crear conciencia sobre la importancia
+                                            de la prevención y el diagnóstico oportuno en la población en general.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/6/Va-Por-ti.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>FUCAM</h4>
+                                        <p>es una institución privada sin fines de lucro que ofrece tratamiento integral de cáncer de mama, mediante su unidad hospitalaria de alta especialidad en la Ciudad de México y sus centros de detección en la República Mexicana (uno fijo en Oaxaca, Oax., 2 unidades móviles y un Vagón en El Tren de la Salud). Después de 20 años de trabajo, ha desarrollado una
+                                            estrategia integral que inicia con la educación y promoción de la detección oportuna, el diagnóstico y el tratamiento médico quirúrgico del cáncer de mama, hasta la reconstrucción mamaria; incluyendo el apoyo psicológico/tanatológico. En el 2019 se detectaron 1,424 nuevos casos de cáncer de mama, se realizaron 2,270 cirugías y se administraron 21, 891 de
+                                            tratamientos de quimioterapia. A las pacientes se les realiza estudio socioeconómico para designar las cuotas a pagar con el fin de incrementar las posibilidades de apoyar a más mujeres con un tratamiento oportuno y especializado.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/13/FUCAM.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Salvat A.C.I.</h4>
+                                        <p>es una organización de la sociedad civil, creada en 2011, que apoya a pacientes con cáncer y sus familias a mejorar su calidad de vida, mediante un equipo multidisciplinario que brinda tratamientos físicos y emocionales de excelencia y calidez que contribuyen en la educación a la sociedad sobre la detección oportuna y la disminución de riesgos de esta
+                                            enfermedad. Contamos con dos áreas de acción: “Educar para Salvar” que tiene como objetivo educar sobre la importancia de la detección oportuna y disminución de riesgo de cáncer de mama, próstata y pulmón, así como al paciente oncológico sobre tratamientos, secuelas y afecciones a su salud emocional. Proyectos de Incidencia Política para ser la voz del
+                                            paciente, acompañamiento en derechos del paciente. Y “Calidad de Vida” que busca apoyar a pacientes de bajos recursos a recuperar su calidad de vida mediante diferentes programas como, terapia física, psicología, grupos de ayuda, nutrición oncológica, monitoreo y asesoría, onco-imagen y manuales Salvati. El cáncer es la tercera causa de muerte en México.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/20/Salvati.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Fundación Mark IAP</h4>
+                                        <p>Fundación Mark se constituye en el 2006 como una Institución de Asistencia Privada, dedicada a operar diferentes programas de entretenimiento en hospitales pediátricos con el fin de generar bienestar en la salud emocional de niñas, niños y adolescentes con cáncer que se encuentran recibiendo tratamiento. A través del trabajo profesional de un equipo de
+                                            psicólogos los niños y adolescentes desarrollan habilidades cognitivas, Incrementan su nivel de socialización y desarrollan actividades socio afectivas como un derecho fundamental para llevar una vida digna y saludable bajo los fundamentos de inclusión e igualdad. Tenemos presencia en 5 de los Hospitales más importantes de 3er nivel en México, ayudando
+                                            durante 14 años de operación a 5,024 pacientes de 2 a 18 años de edad.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/29/Fundacion-Mark.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Cruz rosa Guadalajara</h4>
+                                        <p>Es el primer albergue en el occidente del país para mujeres con cualquier tipo de cáncer, que están pasando por una situación económica desfavorable. Albergue que brinda un apoyo integral que consiste en: hospedaje, alimentación, terapias ocupacionales, traslados a hospitales, terapias psicológicas y apoyo emocional, servicios que se han brindado de
+                                            manera continua durante todo el tratamiento contra esta difícil enfermedad. Adicionalmente, Cruz Rosa Guadalajara, promueve de manera activa la detección oportuna del cáncer de mama por medio de la técnica de la autoexploración, actividad que se realiza desde hace 7 años por medio de la colocación de un módulo de autoexploración en las instalaciones del
+                                            hospital Zoquiapan, con la participación en ferias de salud, logrando con ello crear una cultura de prevención de esta enfermedad en la sociedad Jalisciense.
+
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <!-- <img src="images/Fundaciones/svg/29/Fundacion-Mark.svg" class="img-fluid" alt=""> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Asociación Mexicana de Lucha Contra el Cáncer (AMLCC)</h4>
+                                        <p>Fundada en 1972, la Asociación Mexicana de Lucha Contra el Cáncer, es una organización civil sin fines de lucro cuya misión es combatir el cáncer, mediante 4 programas (Educación, Detección Temprana, Apoyo a Pacientes e Incidencia en Políticas Públicas) para disminuir su impacto en la población mexicana. Tan sólo en 2019 se logró beneficiar a 5,868
+                                            personas que viven con distintos tipos de cáncer, por medio de las actividades asignadas en los programas. Trabaja en alianza con redes nacionales e internacionales, buscando la mejor atención para los pacientes.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/46/AMLCC.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Fundación Alma IAP:</h4>
+                                        <p>Construir y reconstruir vidas a través de programas de educación y genética para la detección oportuna de cáncer de mama, desde edades tempranas y la realización de cirugías de reconstrucción mamaria en pacientes sobrevivientes y así reducir la taza de mortalidad por este padecimiento en nuestro país.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/63/Alma-IAP.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Aquí Nadie se rinde</h4>
+                                        <p>Diariamente 19 familias mexicanas reciben la noticia de que su hija o hijo tiene cáncer y, para otras 6, que será el último día que pasarán con ellos. El cáncer no sólo afecta la salud del paciente, repercute en la situación económica, social y emocional de la familia. En Aquí Nadie Se Rinde, I.A.P. desarrollamos un modelo de intervención integral para
+                                            las niñas, niños y adolescentes con cáncer y sus familias, compuesto por cuatro programas con los que financiamos el tratamiento pre-durante-post trasplante de médula ósea; damos acompañamiento psicopedagógico, lúdico y recreativo; capacitación en proyectos productivos para las familias y acompañamiento en el desarrollo de marca y canales de venta;
+                                            financiamiento de investigación en cáncer infantil; capacitación del cuerpo médico; e incidencia en política pública. Cada año, en promedio apoyamos a 900 familias.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        <img src="images/Fundaciones/svg/73/Nadie-se-rinde.svg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselCancer" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselCancer" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
                 </div>
             </div>

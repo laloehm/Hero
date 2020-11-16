@@ -139,6 +139,8 @@ a:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 1;
+    letter-spacing: 1px;
 }
 
 .title::after {
@@ -146,7 +148,7 @@ a:hover {
     display: block;
     width: 60px;
     background: #000;
-    height: 6px;
+    height: 8px;
     border-radius: 50px;
     margin-top: 8px;
 }
@@ -156,18 +158,17 @@ a:hover {
     text-align: center;
     max-height: 700px;
     position: relative;
+    z-index: 1;
 }
 
 .home h1 {
     font-family: 'Avenir-Regular', serif;
     /* width: 80%; */
-    margin-top: 1.5rem;
-    font-size: 2rem;
+    margin-top: 2rem;
+    font-size: 1.7rem;
     text-align: center;
     display: flex;
     align-items: center;
-    position: absolute;
-    bottom: 15%;
 }
 
 .home h1::after {
@@ -209,6 +210,10 @@ a:hover {
 }
 
 /* Nosotros */
+.about {
+    position: relative;
+}
+
 .about,
 .fundaciones {
     min-height: 550px;
@@ -247,6 +252,14 @@ a:hover {
 
 .about .carousel-item span {
     font-family: 'Avenir-Bold', serif;
+}
+
+.about .pleca {
+    position: absolute;
+    max-width: 100%;
+    top: -90%;
+    height: 900px;
+    z-index: 0;
 }
 
 /* Fundaciones */
@@ -384,7 +397,50 @@ a.btn-donar {
 /* Heroes */
 .heroes {
     background: #f9f9f9;
-    height: 600px;
+}
+
+.heroes .conocelos {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.box-img span {
+    display: block;
+    position: absolute;
+    background: #000000;
+}
+
+.box-img span:nth-child(1),
+.box-img span:nth-child(5) {
+    width: 100px;
+    height: 5px;
+}
+
+.box-img span:nth-child(1) {
+    top: 0;
+    left: 15px;
+}
+
+.box-img span:nth-child(5) {
+    bottom: 0;
+    right: 15px;
+}
+
+.box-img span:nth-child(2),
+.box-img span:nth-child(4) {
+    height: 100px;
+    width: 5px;
+}
+
+.box-img span:nth-child(2) {
+    top: 0;
+    left: 15px;
+}
+
+.box-img span:nth-child(4) {
+    bottom: 0;
+    right: 15px;
 }
 
 /* Contact */
@@ -401,6 +457,7 @@ form button {
 }
 
 .btn-enviar {
+    background: #fff;
     background-image: url(../images/enviar.svg);
     background-size: cover;
     width: 150px;
@@ -409,6 +466,7 @@ form button {
 }
 
 .btn-suscribirse {
+    background: #fff;
     background-image: url(../images/suscribirse.svg);
     background-size: cover;
     width: 190px;
@@ -427,6 +485,35 @@ form button {
     border-bottom: 1px solid #ebebeb;
     box-shadow: 3px 3px 3px #ebebeb;
 }
+
+[type="checkbox"] {
+    background-color: #56fbc4;
+    display: none;
+}
+
+.form-check label:before {
+    content: '';
+    border: 1px solid #cdd2d7;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+[type="checkbox"]:checked+label:before {
+    border-color: #56fbc4;
+    color: #56fbc4;
+    content: '\f00c';
+    font-family: FontAwesome;
+    transform: rotate(360deg);
+}
+
+/* Footer */
 
 footer {
     background: #000;
@@ -461,15 +548,27 @@ footer .redes img {
     width: 25px;
 }
 
-/* Modals */
-
-.modal-content {
-    background: #212326;
+/* Gallery Heroes */
+.gallery {
+    background: #000;
     color: #fff;
 }
 
+.gallery .title {
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.gallery .title::after {
+    background: #fff;
+    width: 16%;
+    height: 15px;
+}
+
+/* Modals */
+
 .modal-content img {
-    width: 150px;
+    width: 200px;
 }
 
 .modal-content h4 {
@@ -478,7 +577,7 @@ footer .redes img {
     color: #f7f8fc;
 }
 
-#modalDos h4.title::after {
+.modal-content h4.title::after {
     content: '';
     width: 100px;
     height: 3px;
@@ -491,20 +590,25 @@ footer .redes img {
     font-size: 14px;
 }
 
-#modalDos {
+.modal {
     background: rgba(0, 0, 0, .95);
 }
 
-#modalDos .modal-content {
-    background: #fff;
+.modal-content .carousel-item {
+    height: 400px;
+}
+
+.modal-content .carousel-item .row {
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.modal-content h4 {
     color: black;
 }
 
-#modalDos .modal-content h4 {
-    color: black;
-}
-
-#modalDos h4.title::after {
+.modal-content h4.title::after {
     content: '';
     width: 135px;
     height: 3px;
@@ -515,7 +619,7 @@ footer .redes img {
     right: 5%;
 }
 
-#modalDos h4.title::before {
+.modal-content h4.title::before {
     content: '';
     width: 135px;
     height: 3px;
@@ -526,123 +630,39 @@ footer .redes img {
     left: 5%;
 }
 
-#modalDos .modal-content .col-md-5::after {
+.modal-content .col-md-4::after {
     content: '';
     display: block;
     height: 180px;
     width: 3px;
     background: #000;
-    left: 10%;
+    left: 0%;
     position: absolute;
 }
 
-/* #modalDos .modal-content .modal-body::after {
-    content: '';
-    display: block;
-    height: 180px;
-    width: 7px;
-    background: #000;
-    left: -2px;
-    position: absolute;
-    bottom: 0;
+.modal-content .col-md-8 {
+    padding-right: 3em;
 }
 
-#modalDos .modal-content .modal-body::before {
-    content: '';
-    display: block;
-    width: 180px;
-    height: 7px;
-    background: #000;
-    left: -2px;
-    position: absolute;
-    bottom: -1px;
+.carousel-control-next,
+.carousel-control-prev {
+    width: 20px;
+    background: red;
 }
 
-#modalDos .modal-content::after {
-    content: '';
-    display: block;
-    height: 180px;
-    width: 7px;
-    background: #000;
-    right: -2px;
-    position: absolute;
-    top: 0;
+.carousel-control-next {
+    right: -24px;
 }
 
-#modalDos .modal-content::before {
-    content: '';
-    display: block;
-    width: 180px;
-    height: 7px;
-    background: #000;
-    right: -2px;
-    position: absolute;
-    top: -1px;
-} */
-
-#modalMujeres .modal-content .col-md-5::after {
-    content: '';
-    display: block;
-    height: 150px;
-    width: 3px;
-    background: #fff;
-    left: 10%;
-    position: absolute;
-}
-
-#modalMujeres .modal-content .modal-body::after {
-    content: '';
-    display: block;
-    height: 130px;
-    width: 4px;
-    background: #fff;
-    left: -2px;
-    position: absolute;
-    bottom: 0;
-}
-
-#modalMujeres .modal-content .modal-body::before {
-    content: '';
-    display: block;
-    width: 130px;
-    height: 4px;
-    background: #fff;
-    left: -2px;
-    position: absolute;
-    bottom: -1px;
-}
-
-#modalMujeres .modal-content::after {
-    content: '';
-    display: block;
-    height: 130px;
-    width: 4px;
-    background: #fff;
-    right: -2px;
-    position: absolute;
-    top: 0;
-}
-
-#modalMujeres .modal-content::before {
-    content: '';
-    display: block;
-    width: 130px;
-    height: 4px;
-    background: #fff;
-    right: -2px;
-    position: absolute;
-    top: -1px;
-}
-
-#modalMujeres .close {
-    color: rgba(255, 255, 255, .5);
+.carousel-control-prev {
+    left: -24px;
 }
 
 
 
 @media (min-width: 576px) {
     .modal-dialog {
-        max-width: 850px;
+        max-width: 950px;
         margin: 1.75rem auto;
     }
 }
