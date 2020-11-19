@@ -136,3 +136,34 @@ $(window).scroll(function () {
     }
 });
 
+var URLactual = window.location;
+
+if (URLactual == 'http://127.0.0.1:5500/heroes-hero.html') {
+  
+    let icon = document.querySelectorAll('#icon-menu span');
+    icon.forEach(element => {
+        element.style.background = "#fff"
+    });
+
+    let links = document.querySelectorAll('.smooth');
+        links.forEach(element => {
+        element.style.color = "#f9f9f9"
+        })
+    
+    let logo = document.querySelector('.logo').style.display = "block";
+    let barra = document.querySelector('.heroes').style.background = "#000"
+    
+    $(window).scroll(function () {  
+        if ($(".navbar").offset().top > 500) {
+            icon.forEach(element => {
+            element.style.background = "#000"
+        });
+        } else {
+            icon.forEach(element => {
+                element.style.background = "#fff";
+        });        
+        }
+    });
+}
+
+
