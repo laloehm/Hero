@@ -432,18 +432,6 @@ a.btn-donar {
 }
 
 /* Contact */
-form button {
-    /* background-image: linear-gradient(160deg, #f2f2f2 0, #3b3b3b 40%, #000000 100%) !important;
-    border: 0 !important;
-    border-radius: 20px !important;
-    width: 125px; */
-    /* background: white !important;
-    color: black !important;
-    border: 1px solid #ced4da !important;
-    border-radius: 5px !important;
-    box-shadow: 5px 5px 10px #ced4da; */
-}
-
 .btn-enviar {
     background: #fff;
     background-image: url(../images/enviar.svg);
@@ -791,6 +779,10 @@ footer .redes img {
         width: 120px;
     }
 
+    .modal-content .col-md-4::after {
+        display: none;
+    }
+
     .carousel-control-next,
     .carousel-control-prev {
         width: 15px;
@@ -801,7 +793,31 @@ footer .redes img {
     }
 
     .carousel-item p {
-        font-size: 13px;
+        font-size: 10px;
+    }
+
+    .form-check {
+        padding-left: 0;
+    }
+
+    .form-check-label {
+        font-size: 14px;
+    }
+
+    .modal-content {
+        height: 580px;
+    }
+
+    .modal-content .carousel-item .col-md-8 {
+        padding: 0 !important;
+    }
+
+    .modal-content .carousel-inner {
+        height: 490px;
+    }
+
+    .modal-content .carousel-item {
+        height: 100%;
     }
 
     .modal-content .col-md-8 {
