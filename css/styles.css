@@ -280,18 +280,6 @@ a:hover {
     cursor: pointer;
 }
 
-.fundaciones .categorias .categoria:hover {
-    flex: 18;
-}
-
-.fundaciones .categorias .categoria:hover h2 {
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-}
-
 .fundaciones .categoria h2 {
     margin: 0;
     transform: rotate(-90deg);
@@ -673,7 +661,6 @@ footer .redes img {
 .carousel-control-next,
 .carousel-control-prev {
     width: 20px;
-    background: red;
 }
 
 .carousel-control-next {
@@ -682,6 +669,28 @@ footer .redes img {
 
 .carousel-control-prev {
     left: -24px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../images/Prev.svg);
+}
+
+.carousel-control-next-icon {
+    background-image: url(../images/Next.svg);
+}
+
+@media (min-width: 992px) {
+    .fundaciones .categorias .categoria:hover {
+        flex: 18;
+    }
+
+    .fundaciones .categorias .categoria:hover h2 {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
 }
 
 @media (min-width: 576px) {
@@ -716,6 +725,12 @@ footer .redes img {
         width: auto;
     }
 
+    .navbar .links a:hover::after {
+        width: 20%;
+        bottom: 0;
+        left: 40%;
+    }
+
     .navbar .logo {
         width: 80px;
         position: absolute;
@@ -739,6 +754,10 @@ footer .redes img {
         font-size: 20px;
     }
 
+    .about .carousel-item .content {
+        width: 100%;
+    }
+
     .fundaciones .categorias {
         flex-direction: column;
         height: auto;
@@ -758,6 +777,35 @@ footer .redes img {
         -moz-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         -o-transform: rotate(0deg);
+    }
+
+    .modal-content h4 {
+        font-size: 16px;
+    }
+
+    .modal-content p {
+        font-size: 11px;
+    }
+
+    .modal-content img {
+        width: 120px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 15px;
+    }
+
+    .about .carousel-item {
+        height: 390px;
+    }
+
+    .carousel-item p {
+        font-size: 13px;
+    }
+
+    .modal-content .col-md-8 {
+        padding-right: 15px;
     }
 
     footer .footer-links {
