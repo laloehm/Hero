@@ -43,7 +43,8 @@
     margin: 0;
 }
 
-h2 {
+h2,
+h3 {
     font-family: 'Avenir-Bold', serif;
 }
 
@@ -350,38 +351,6 @@ a.btn-donar {
     margin: 0 auto;
 }
 
-.owl-prev {
-    position: absolute;
-    left: -50px;
-    top: calc(50% - 15px);
-}
-
-.owl-theme .owl-nav [class*=owl-] {
-    background: transparent !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.prev-slide {
-    background-image: url(../images/Izquierda.svg);
-}
-
-.next-slide {
-    background-image: url(../images/Derecha.svg);
-}
-
-.prev-slide,
-.next-slide {
-    width: 30px;
-    height: 30px;
-}
-
-.owl-next {
-    position: absolute;
-    right: -50px;
-    top: calc(50% - 15px);
-}
-
 /* Heroes */
 .heroes {
     background: #f9f9f9;
@@ -430,6 +399,80 @@ a.btn-donar {
     bottom: 0;
     right: 15px;
 }
+
+/* Causas */
+
+.causas .owl-prev {
+    position: absolute;
+    left: -10px;
+    top: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+}
+
+.causas .owl-theme .owl-nav [class*=owl-] {
+    background: transparent !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.causas .owl-next {
+    position: absolute;
+    right: -10px;
+    top: calc(50% - 15px);
+    height: 30px;
+    width: 30px;
+}
+
+.causas .owl-carousel img {
+    padding: 25px 0;
+}
+
+.causas .owl-carousel h4.name {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7e8388;
+    flex-direction: column;
+    padding: 0 20px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: none;
+    text-align: center;
+    max-width: 140px;
+}
+
+.causas .owl-carousel .owl-item.active:nth-child(2) h4.name {
+    display: block;
+}
+
+.causas .owl-carousel h4.name span {
+    color: #fff;
+}
+
+.causas button:focus {
+    outline: 0;
+}
+
+/* .prev-slide {
+    background-image: url(../images/Izquierda.svg);
+}
+
+.next-slide {
+    background-image: url(../images/Derecha.svg);
+}
+
+.prev-slide,
+.next-slide {
+    width: 30px;
+    height: 30px;
+} */
+
 
 /* Contact */
 .btn-enviar {
