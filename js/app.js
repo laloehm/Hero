@@ -71,7 +71,7 @@ $('.owl-carousel').owlCarousel({
             nav: true,
             dots: false
         },
-        600: {
+        767: {
             items: 3,
             nav: true,
             dots: false
@@ -88,35 +88,38 @@ if (screen.width < 767) {
     let next = $('.owl-next');
     let prev = $('.owl-prev');
     let activo = $('.owl-item.active');
-    $(activo).css({ 'transform': 'scale(.85)', 'opacity': .2 });
-    $(activo[0]).css({'transform':'scale(1)', 'opacity': 1 });
-    let name = $('.owl-item.active .name');
-    $(name[0]).css('display', 'flex');
+    $(activo[0]).css({'transform':'scale(.9)', 'opacity': 1 });
 
     $(next).on('click', function () {
         let activos = $('.owl-item.active');
-        let name = $('.owl-item.active .name');
-        $(activos).css({'transform' : 'scale(.85)','opacity' : .2});
-        $(activos[0]).css({'transform':'scale(1)', 'opacity': 1 });
-        $(name).css('display', 'none')
-        $(name[0]).css('display', 'flex');
-        console.log(activos)
+        $(activos[0]).css({ 'transform': 'scale(.9)', 'opacity': 1 });
     });
     $(prev).on('click', function () {
         let activos = $('.owl-item.active');
-        let name = $('.owl-item.active .name');
-        $(activos).css({'transform' : 'scale(.85)','opacity' : .2});
-        $(activos[0]).css({'transform':'scale(1)', 'opacity': 1 });
-        $(name).css('display', 'none')
-        $(name[0]).css('display', 'flex');
-        console.log(activos)
+        $(activos[0]).css({'transform':'scale(.9)', 'opacity': 1 });
     })
-   } else {
+} else if (screen.width < 1024){
+    let next = $('.owl-next');
+    let prev = $('.owl-prev');
+    let activo = $('.owl-item.active');
+    $(activo[0]).css({'transform':'scale(1)', 'opacity': 1 });
+
+    $(next).on('click', function () {
+        let activos = $('.owl-item.active');
+        $(activos[0]).css({'transform':'scale(1)', 'opacity': 1 });
+    });
+    $(prev).on('click', function () {
+        let activos = $('.owl-item.active');
+        $(activos[0]).css({'transform':'scale(1)', 'opacity': 1 });
+    })
+    
+}
+else {
         let next = $('.owl-next');
         let prev = $('.owl-prev');
         let activo = $('.owl-item.active');
         $(activo).css({ 'transform': 'scale(.75)', 'opacity': .2 });
-        $(activo[1]).css({'transform':'scale(.9)', 'opacity': 1 });
+        $(activo[1]).css({'transform':'scale(1.1)', 'opacity': 1 });
         let name = $('.owl-item.active .name');
         $(name[1]).css('display', 'flex');
 
@@ -124,7 +127,7 @@ if (screen.width < 767) {
             let activos = $('.owl-item.active');
             let name = $('.owl-item.active .name');
             $(activos).css({'transform' : 'scale(.75)','opacity' : .2});
-            $(activos[1]).css({'transform':'scale(.9)', 'opacity': 1 });
+            $(activos[1]).css({'transform':'scale(1.1)', 'opacity': 1 });
             $(name).css('display', 'none')
             $(name[1]).css('display', 'flex');
             console.log(activos)
@@ -133,7 +136,7 @@ if (screen.width < 767) {
             let activos = $('.owl-item.active');
             let name = $('.owl-item.active .name');
             $(activos).css({'transform' : 'scale(.75)','opacity' : .2});
-            $(activos[1]).css({'transform':'scale(.9)', 'opacity': 1 });
+            $(activos[1]).css({'transform':'scale(1.1)', 'opacity': 1 });
             $(name).css('display', 'none')
             $(name[1]).css('display', 'flex');
             console.log(activos)

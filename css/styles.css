@@ -426,6 +426,7 @@ a.btn-donar {
 
 .causas .owl-carousel img {
     padding: 25px 0;
+    width: 65%;
 }
 
 .causas .owl-carousel h4.name {
@@ -444,7 +445,7 @@ a.btn-donar {
     text-transform: uppercase;
     display: none;
     text-align: center;
-    max-width: 140px;
+    width: 35%;
 }
 
 .causas .owl-carousel .owl-item.active:nth-child(2) h4.name {
