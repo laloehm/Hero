@@ -400,6 +400,13 @@ a.btn-donar {
     right: 15px;
 }
 
+/* Libro */
+.libro a.comprar {
+    width: 200px;
+    display: block;
+    margin: 20px auto;
+}
+
 /* Causas */
 
 .causas .owl-prev {
