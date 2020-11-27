@@ -407,6 +407,33 @@ a.btn-donar {
     margin: 20px auto;
 }
 
+#modalLibro .modal-content {
+    box-shadow: 0px 0px 30px #ebebeb;
+}
+
+#mc_embed_signup .mc-field-group input {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    text-indent: 2%;
+    border: none;
+    border-bottom: 1px solid #ebebeb;
+    box-shadow: 3px 3px 3px #ebebeb;
+}
+
+#mc-embedded-subscribe {
+    margin: 0 !important;
+}
+
+#mc-embedded-subscribe {
+    clear: both;
+    width: auto;
+    display: block;
+    margin: 1em 0 1em 5%;
+    border: none;
+    background: #fff;
+}
+
 /* Causas */
 
 .causas .owl-prev {
@@ -895,6 +922,24 @@ footer .redes img {
     footer .footer-links a {
         display: block;
         margin: 5px 0;
+    }
+
+    #mc_embed_signup .size1of2 {
+        width: 100% !important;
+        margin: 10px 0;
+    }
+
+    #mc_embed_signup .mc-field-group {
+        width: 100% !important;
+    }
+
+    #mc-embedded-subscribe {
+        width: 150px !important;
+        height: auto;
+    }
+
+    #mc-embedded-subscribe img {
+        width: 100%;
     }
 
 }
