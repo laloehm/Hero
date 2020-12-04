@@ -745,6 +745,27 @@ footer .redes img {
     background-image: url(../images/Next.svg);
 }
 
+#modalPromocion .modal-content {
+    max-width: 600px;
+    background: transparent;
+    margin: 0 auto;
+}
+
+#modalPromocion .modal-content img {
+    width: 100%;
+}
+
+#modalPromocion .modal-content button {
+    position: absolute;
+    right: 5px;
+    top: 6px;
+}
+
+#modalPromocion .modal-content button span {
+    font-family: 'Avenir-Bold', serif;
+    font-size: 2rem;
+}
+
 @media (min-width: 992px) {
     .fundaciones .categorias .categoria:hover {
         flex: 18;

@@ -21,13 +21,14 @@
 </head>
 
 <body>
-    <section class="home d-flex justify-content-center align-items-center flex-column px-lg-5">
+    <section class="home d-flex justify-content-center align-items-center flex-column px-lg-5" id="home">
         <div class="navbar fixed-top">
-            <img src="images/Logo.png" class="img-fluid logo" alt="">
+            <a href="#home" class="smooth"><img src="images/Logo.png" class="img-fluid logo" alt=""></a>
             <div class="links" id="menu">
                 <a href="#nosotros" class="smooth">Nosotros</a>
                 <a href="#fundaciones" class="smooth">Fundaciones</a>
                 <a href="#heroes" class="smooth">Héroes</a>
+                <a href="#libro" class="smooth">Libro</a>
                 <a href="#contacto" class="smooth">contacto</a>
             </div>
             <div class="icon" id="icon-menu">
@@ -133,7 +134,7 @@
         </div>
     </section>
 
-    <section class="libro">
+    <section class="libro" id="libro">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -210,19 +211,19 @@
                     <form class="">
                         <div class="form-group">
                             <label for="name">Nombre completo</label>
-                            <input type="text" class="form-control" id="name" name="name">
+                            <input type="text" class="form-control" id="name" name="name" required>
                         </div>
                         <div class="row">
                             <div class="col-md-6 p-0 pl-md-0">
                                 <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email">
+                                    <input type="email" class="form-control" id="email" required>
                                 </div>
                             </div>
                             <div class="col-md-6 p-0 pr-md-0">
                                 <div class="form-group">
                                     <label for="phone">Teléfono</label>
-                                    <input type="text" class="form-control" id="phone">
+                                    <input type="text" class="form-control" id="phone" required>
                                 </div>
                             </div>
                         </div>
@@ -231,7 +232,7 @@
                             <textarea class="form-control" id="message" rows="3"></textarea>
                         </div>
                         <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                             <label class="form-check-label" for="exampleCheck1">Acepto términos y condiciones</label>
                         </div>
                         <button type="submit" class="btn-enviar"></button>
@@ -242,11 +243,11 @@
                     <form class="w-100">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="email" class="form-control" id="exampleInputEmail1" required>
                         </div>
                         <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Acepto términos y condiciones</label>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck2" required>
+                            <label class="form-check-label" for="exampleCheck2">Acepto términos y condiciones</label>
                         </div>
                         <button type="submit" class="btn-suscribirse mt-4"></button>
                     </form>
@@ -1444,6 +1445,18 @@
         </div>
     </div>
 
+    <!-- Ecologia -->
+    <div class="modal fade" id="modalPromocion" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <a href="#libro"><img src="images/Portada.jpg" class="img-fluid" alt=""></a>
+            </div>
+        </div>
+    </div> <!-- End Ecología -->
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -1453,7 +1466,11 @@
     <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js'></script> -->
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/app.js"></script>
-
+    <script>
+        $(document).ready(function () {
+            $('#modalPromocion').modal('show');
+        })
+    </script>
 </body>
 
 </html>
