@@ -200,6 +200,14 @@ a:hover {
     margin: 15px;
 }
 
+.home h2 {
+    font-family: 'Avenir-Medium', serif;
+}
+
+.home h3 {
+    font-family: 'Avenir-Regular', serif;
+}
+
 .home img {
     width: 70%;
     max-width: 800px;
