@@ -140,7 +140,6 @@ a:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    z-index: 1;
     letter-spacing: 1px;
 }
 
@@ -753,9 +752,13 @@ footer .redes img {
     background-image: url(../images/Next.svg);
 }
 
-#modalPromocion .modal-content {
-    max-width: 600px;
+#modalPromocion {
     background: transparent;
+}
+
+#modalPromocion .modal-content {
+    max-width: 900px;
+    background: #f9f9f9;
     margin: 0 auto;
 }
 
@@ -767,11 +770,17 @@ footer .redes img {
     position: absolute;
     right: 5px;
     top: 6px;
+    z-index: 1030;
 }
 
 #modalPromocion .modal-content button span {
     font-family: 'Avenir-Bold', serif;
     font-size: 2rem;
+}
+
+#modalpromocion .modal-content p {
+    font-size: 16px;
+    text-align: justify;
 }
 
 @media (min-width: 992px) {

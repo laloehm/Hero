@@ -19,7 +19,7 @@ $("a.smooth").on("click", function (e) {
 // Funcion para barra de Menu
 $(window).scroll(function () {
     let header = $(".navbar");
-    if ($(".navbar").offset().top > 500) {
+    if ($(".navbar").offset().top > 400) {
         $(header).css("background", "#fff");
         $('.navbar img').fadeIn();
     } else {
