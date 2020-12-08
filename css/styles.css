@@ -1000,11 +1000,25 @@ footer .redes img {
 
     #modalPromocion .modal-content {
         height: auto;
-        padding: 0 0 3rem 0;
+        padding: 0 0 2rem 0;
+        width: 90%;
     }
 
     #modalPromocion .title {
         margin-top: 2rem;
+        font-size: 20px;
+    }
+
+    #modalPromocion .modal-content p {
+        font-size: 14px;
+        text-align: justify;
+        margin: 0;
+    }
+
+    #modalPromocion .modal-content a#btnmodalpromocion img {
+        width: 150px;
+        display: block;
+        margin: 0 auto;
     }
 
 }
