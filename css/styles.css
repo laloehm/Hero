@@ -418,7 +418,8 @@ a.btn-donar {
     box-shadow: 0px 0px 30px #ebebeb;
 } */
 
-#mc_embed_signup .mc-field-group input {
+#mc_embed_signup .mc-field-group input,
+#mc_embed_signup .mc-field-group select {
     display: block;
     width: 100%;
     padding: 8px 0;
@@ -778,9 +779,15 @@ footer .redes img {
     font-size: 2rem;
 }
 
-#modalpromocion .modal-content p {
+#modalPromocion .modal-content p {
     font-size: 16px;
     text-align: justify;
+}
+
+#modalPromocion .modal-content #btnmodalpromocion {
+    display: block;
+    width: 180px;
+    margin-top: 25px;
 }
 
 @media (min-width: 992px) {
@@ -870,6 +877,14 @@ footer .redes img {
         font-size: 20px;
     }
 
+    .home h2 {
+        font-size: 22px;
+    }
+
+    .home h3 {
+        font-size: 18px;
+    }
+
     .about .carousel-item .content {
         width: 100%;
     }
@@ -916,8 +931,11 @@ footer .redes img {
         width: 15px;
     }
 
-    .about .carousel-item {
+    /* .about .carousel-item {
         height: 390px;
+    } */
+    .about {
+        min-height: 450px;
     }
 
     .carousel-item p {
@@ -978,6 +996,15 @@ footer .redes img {
 
     #mc-embedded-subscribe img {
         width: 100%;
+    }
+
+    #modalPromocion .modal-content {
+        height: auto;
+        padding: 0 0 3rem 0;
+    }
+
+    #modalPromocion .title {
+        margin-top: 2rem;
     }
 
 }

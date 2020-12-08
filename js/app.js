@@ -141,5 +141,11 @@ else {
             $(name[1]).css('display', 'flex');
             console.log(activos)
         })
-    }
+}
+    
+// let btnmodalpromocion = document.querySelector('#btnmodalpromocion img');
+
+// btnmodalpromocion.addEventListener('clic', ()=> {
+//     document.querySelector('#modalPromocion').style.display = 'none'
+// })
      
