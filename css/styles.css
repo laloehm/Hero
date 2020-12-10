@@ -617,14 +617,14 @@ footer .redes img {
 }
 
 .gallery .title {
-    font-size: 50px;
+    font-size: 44px;
     letter-spacing: 2px;
 }
 
 .gallery .title::after {
     background: #fff;
-    width: 16%;
-    height: 15px;
+    width: 12%;
+    height: 6px;
 }
 
 .card-columns .card {
