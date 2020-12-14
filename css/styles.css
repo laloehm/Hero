@@ -734,7 +734,7 @@ footer .redes img {
 
 .carousel-control-next,
 .carousel-control-prev {
-    width: 20px;
+    width: 30px;
 }
 
 .carousel-control-next {
@@ -931,11 +931,12 @@ footer .redes img {
         width: 15px;
     }
 
-    /* .about .carousel-item {
-        height: 390px;
-    } */
     .about {
         min-height: 450px;
+    }
+
+    .about .title {
+        z-index: 1;
     }
 
     .carousel-item p {
@@ -1019,6 +1020,10 @@ footer .redes img {
         width: 150px;
         display: block;
         margin: 0 auto;
+    }
+
+    .gallery .title {
+        font-size: 30px;
     }
 
 }
