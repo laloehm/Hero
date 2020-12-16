@@ -790,6 +790,7 @@ footer .redes img {
     margin-top: 25px;
 }
 
+
 @media (min-width: 992px) {
     .fundaciones .categorias .categoria:hover {
         flex: 18;
@@ -951,17 +952,17 @@ footer .redes img {
         font-size: 14px;
     }
 
-    .modal-content {
+    /* .modal-content {
         height: 580px;
-    }
+    } */
 
     .modal-content .carousel-item .col-md-8 {
         padding: 0 !important;
     }
 
-    .modal-content .carousel-inner {
+    /* .modal-content .carousel-inner {
         height: 490px;
-    }
+    } */
 
     .modal-content .carousel-item {
         height: 100%;
@@ -1023,7 +1024,7 @@ footer .redes img {
     }
 
     .gallery .title {
-        font-size: 30px;
+        font-size: 26px;
     }
 
 }

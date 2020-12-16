@@ -16,6 +16,7 @@ $("a.smooth").on("click", function (e) {
         scrollTop: $(anchor).offset().top - 100 + "px"
     }, 1000);
 });
+
 // Funcion para barra de Menu
 $(window).scroll(function () {
     let header = $(".navbar");
@@ -31,7 +32,7 @@ $(window).scroll(function () {
 
 var URLactual = window.location;
 
-if (URLactual == 'http://127.0.0.1:5500/heroes-hero.html') {
+if (URLactual == 'http://127.0.0.1:5500/heroes-hero.html' || URLactual == 'http://127.0.0.1:5500/voces-hero.html') {
 
     let icon = document.querySelectorAll('#icon-menu span');
     icon.forEach(element => {
