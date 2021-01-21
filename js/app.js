@@ -143,6 +143,13 @@ else {
             console.log(activos)
         })
 }
+
+let btnsubmit = document.querySelector('#mc-embedded-subscribe');
+let btncomprar = document.querySelector('#btncomprar');
+
+btnsubmit.addEventListener('submit', () => {
+    btncomprar.classList.toggle('d-none')
+})
     
 // let btnmodalpromocion = document.querySelector('#btnmodalpromocion img');
 
