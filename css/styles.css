@@ -814,6 +814,21 @@ footer .redes img {
         serif;
 }
 
+#modalPromocion a.btn-donar {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    color: #fff;
+    background: rgba(255, 255, 255, .6);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 20px;
+    /* font-family: 'Avenir-Bold'; */
+    font-size: 18px;
+    margin: 0 5px;
+    align-items: center;
+}
+
 
 @media (min-width: 992px) {
     .fundaciones .categorias .categoria:hover {
