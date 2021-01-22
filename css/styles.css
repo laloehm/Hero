@@ -304,49 +304,57 @@ a:hover {
     color: #fff;
 } */
 
-.categorias .mujeres {
+.categorias .mujeres,
+#modalPromocion .mujeres {
     background-image: url(../images/Categorias/mujeres_BN.png) !important;
     background-size: cover;
     background-position: right;
 }
 
-.categorias .niños {
+.categorias .niños,
+#modalPromocion .niños {
     background-image: url(../images/Categorias/ninos_BN.png) !important;
     background-size: cover;
     background-position: right;
 }
 
-.categorias .educacion {
+.categorias .educacion,
+#modalPromocion .educacion {
     background-image: url(../images/Categorias/Educacion_BN.png) !important;
     background-size: cover;
     background-position: right;
 }
 
-.categorias .cancer {
+.categorias .cancer,
+#modalPromocion .cancer {
     background-image: url(../images/Categorias/Cancer_BN.png) !important;
     background-size: cover;
     background-position: right;
 }
 
-.categorias .reconstruccion {
+.categorias .reconstruccion,
+#modalPromocion .reconstruccion {
     background-image: url(../images/Categorias/reconstruccion_BN.png) !important;
     background-size: cover;
     background-position: right;
 }
 
-.categorias .animales {
+.categorias .animales,
+#modalPromocion .animales {
     background-image: url(../images/Categorias/Animales_BN.png) !important;
     background-size: cover;
     background-position: right;
 }
 
-.categorias .ecologia {
+.categorias .ecologia,
+#modalPromocion .ecologia {
     background-image: url(../images/Categorias/Ecologico_BN.png) !important;
     background-size: cover;
     background-position: right;
 }
 
-.categorias .salud {
+.categorias .salud,
+#modalPromocion .salud {
     background-image: url(../images/Categorias/Salud_BN.png) !important;
     background-size: cover;
     background-position: center;
@@ -790,6 +798,22 @@ footer .redes img {
     margin-top: 25px;
 }
 
+#modalPromocion .card-header {
+    color: white;
+    cursor: pointer;
+}
+
+#modalPromocion .card {
+    border: none;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+#modalPromocion .card-header h2 {
+    font-family: 'Avenir-Regular',
+        serif;
+}
+
 
 @media (min-width: 992px) {
     .fundaciones .categorias .categoria:hover {
@@ -1002,8 +1026,8 @@ footer .redes img {
 
     #modalPromocion .modal-content {
         height: auto;
-        padding: 0 0 2rem 0;
-        width: 90%;
+        padding: 1rem 0;
+        width: 95%;
     }
 
     #modalPromocion .title {
@@ -1025,6 +1049,10 @@ footer .redes img {
 
     .gallery .title {
         font-size: 26px;
+    }
+
+    #modalPromocion .card-header h2 {
+        font-size: 20px;
     }
 
 }
